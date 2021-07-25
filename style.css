@@ -1,0 +1,277 @@
+body{
+   background-color: #123456;
+   margin:0;
+}
+/* Top navigation */
+.topnav {
+   overflow:hidden;
+   background-color:#566d7e;
+}
+.topnav a{
+   float:left;
+   display:inline;
+   color:white;
+   text-align:center;
+   padding:16px 16px;
+   text-decoration:none;
+   font-size:18px;
+   font-family:cursive;
+   transition: 0.3s;
+}
+.topnav a:hover, .dropdown:hover .dropbtn{
+   background-color:#050a30;
+   color:white;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: cursive;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:#95b9c7;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.right{
+  float:right;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 60%;
+  background-color: #fffff0;
+  padding: 20px;
+}
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex:40%;
+  background-color:#fffff0;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color:#fffff0;
+}
+h1{
+   font-family:cursive;
+   font-size: 20px;
+}
+p{ 
+   font-family:helvetica;
+   line-height:1.5;
+   text-align: justify;
+   font-size: 15px;
+}
+.content {
+   margin-right:50px;
+   margin-left:50px;
+   background:#fffff0;
+   padding: 10px;
+   position:relative;
+}
+h2{
+   font-family: cursive;
+   font-size: 20px;
+}
+.para{
+   font-size:25px;
+   font-family:cursive;
+   text-align:center;
+   line-height:2;
+}
+ul{
+  line-height:2;
+  font-family:cursive;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #050a30;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #95b9c7;
+}
+input[type=reset] {
+  background-color: #050a30;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=reset]:hover {
+  background-color:#95b9c7;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f4f2e8;
+  padding: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background:#3B5998;
+  color: black;
+}
+
+.instagram {
+  background: pink;
+  color: black;
+}
+
+.footer {
+   padding: 20px;
+   text-align:left;
+   background:#566d7e;
+   color:white;
+   margin-top: 20px;
+   font-size:15px;
+   line-height:1.5;
+}
